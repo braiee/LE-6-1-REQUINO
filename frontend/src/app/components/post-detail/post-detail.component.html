@@ -1,0 +1,24 @@
+<!------
+    
+    
+    <h3><a href="/Post/{{ post?.id }}">{{ post?.title }}</a></h3>
+<p>by {{ post?.firstName }} {{ post?.lastName }}; on {{ post?.dateCreated }}</p>
+<p>{{ post?.body }}</p>
+--->
+
+<br> <br> <br> <br> <br> <br>
+
+<div class="container">
+    <div class="row">
+      <div class="col-md-8 mx-auto">
+        <div class="card border-primary mb-3">
+          <div class="card-body">
+            <h3 class="card-title"><a href="/Post/{{ post?.id }}">{{ post?.title }}</a></h3>
+            <h6 class="card-subtitle mb-2 text-muted">by {{ post?.firstName }} {{ post?.lastName }} on {{ post?.dateCreated }}</h6>
+            <p class="card-text">{{ post?.body }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

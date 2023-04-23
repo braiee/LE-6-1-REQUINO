@@ -1,0 +1,56 @@
+<!------
+<div>
+    <h1>Welcome Back</h1>
+    <h3>Login Here</h3>
+    <form name="form" (ngSubmit)="onSubmit()" #f="ngForm" novalidate>
+      <div>
+        <label for="username">Email</label>
+        <input 
+              required
+              type="text"
+              name="username"
+              [(ngModel)]="form.username"
+              #username="ngModel">
+              
+        <label for="password">Password</label>
+        <input type="password" 
+               name="password"
+               [(ngModel)]="form.password"
+               required
+               #username="ngModel">
+      </div>
+      <button>Submit</button>
+      <a routerLink="/register-page" class="text-dark mx-3" style="text-decoration: none;">Register</a>
+    </form>
+  </div>
+
+  -->
+
+
+<div class="container-fluid">
+  <div class="row justify-content-center align-items-center" style="height:100vh">
+    <div class="col-md-6 col-lg-4">
+      <!-- Login Form -->
+      <div class="card">
+        <div class="card-header">
+          <h4>Login</h4>
+        </div>
+        <div class="card-body">
+          <form name="form" (ngSubmit)="onSubmit()" #f="ngForm" novalidate>
+            <div class="form-group">
+              <label for="username">Username</label>
+              <input [(ngModel)]="form.username"
+              #username="ngModel" required type="text" class="form-control" name="username">
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" name="password" class="form-control" required  [(ngModel)]="form.password" #username="ngModel">
+            </div>
+            <button type="submit" class="btn btn-primary my-3">Login</button>
+            <a routerLink="/register-page" class="text-primary mx-3" style="text-decoration: none;">Register</a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
